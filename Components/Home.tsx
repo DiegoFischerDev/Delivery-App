@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <SafeAreaView>
-      <Text className='text-dark text-3xl ml-5'>Home aki</Text>
+      <Text className='text-dark text-3xl ml-5'>Home akiiii</Text>
 
       {/* header */}
       <View className='flex-row pb-3 items-center mx-4 space-x-2'>
