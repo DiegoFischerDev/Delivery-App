@@ -1,18 +1,12 @@
-import { View, Text, SafeAreaView, Image } from 'react-native'
+import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
-import {
-  UserIcon,
-  ChevronDownIcon,
-  AdjustmentsVerticalIcon,
-  MagnifyingGlassIcon
-} from 'react-native-heroicons/outline'
-import { TextInput } from 'react-native'
-import { ScrollView } from 'react-native'
+import { UserIcon, ChevronDownIcon, AdjustmentsVerticalIcon, MagnifyingGlassIcon} from 'react-native-heroicons/outline'
 import Categories from '../components/Categories'
 import FeaturedRow from '../components/FeaturedRow'
 
-export default function Home() {
+export default function HomeScreen() {
+
   const navigation = useNavigation()
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -32,11 +26,11 @@ export default function Home() {
           <Text className="font-bold text-gray-400 text-xs">Deliver Now!</Text>
           <View className="flex-row items-center">
             <Text className="font-bolde text-xl">Current Location</Text>
-            <ChevronDownIcon size={20} color="#00CCBB" />
+            <ChevronDownIcon size={20} color="gray" />
           </View>
         </View>
 
-        <UserIcon size={35} color="#00CCBB" />
+        <UserIcon size={35} color="gray" />
       </View>
 
       <View className="flex-row items-center space-x-2 mx-4 pb-3">
@@ -47,13 +41,13 @@ export default function Home() {
             keyboardType="default"
           />
         </View>
-        <AdjustmentsVerticalIcon color="#00CCBB" size={35} />
+        <AdjustmentsVerticalIcon color="gray" size={35} />
       </View>
 
       <ScrollView>
         <Categories />
 
-        <View className='mb-40 mt-8'>
+        <View className='mb-40 mt-4'>
           <FeaturedRow
             title="Sponsored"
             description="Paid placements our parteners"
