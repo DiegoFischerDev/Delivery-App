@@ -4,12 +4,11 @@ import { StarIcon } from 'react-native-heroicons/solid'
 import { MapPinIcon } from 'react-native-heroicons/outline'
 
 type Props = {
-  id: number
   imgUrl: string
   title: string
   rating: number
   genre: string
-  adress: string
+  address: string
   short_description: string
   dishes: object
   long: number
@@ -18,12 +17,12 @@ type Props = {
 
 export default function RestaurantCard(props: Props) {
   return (
-    <TouchableOpacity className='bg-white mr-3 shadow rounded'>
+    <TouchableOpacity className='bg-white mr-3 shadow rounded-lg mb-6'>
       <Image 
         source={{
           uri: props.imgUrl
         }}
-        className='h-36 w-64 rounded-sm'
+        className='h-40 w-64 rounded-sm'
       />
       <View className='px-3 pb-4'>
         <Text className='font-bold text-lg pt-2'>{props.title}</Text>
@@ -35,7 +34,7 @@ export default function RestaurantCard(props: Props) {
         </View>
         <View className='flex-row items-center space-x-1'>
           <MapPinIcon color="gray" opacity={0.4} size={22}/>
-          <Text className='text-xs text-gray-500'>Nearby • {props.adress}</Text>
+          <Text className='text-xs text-gray-500'>Nearby • {props.address}</Text>
         </View>
       </View>
     </TouchableOpacity>

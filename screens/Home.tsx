@@ -14,7 +14,6 @@ import FeaturedRow from '../components/FeaturedRow'
 
 export default function Home() {
   const navigation = useNavigation()
-
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false
@@ -22,7 +21,7 @@ export default function Home() {
   }, [])
 
   return (
-    <SafeAreaView className="bg-white pt-5">
+    <SafeAreaView className="bg-white">
       <View className="flex-row pb-3 items-center mx-4 space-x-2">
         <Image
           source={{ uri: 'https://links.papareact.com/wru' }}
@@ -51,26 +50,26 @@ export default function Home() {
         <AdjustmentsVerticalIcon color="#00CCBB" size={35} />
       </View>
 
-      <ScrollView className='bg-gray-100'>
+      <ScrollView>
         <Categories />
-        <FeaturedRow
-          id={1}
-          title="Featured"
-          description="Paid placements our parteners"
-          featuredCategory="featured"
-        />
-        <FeaturedRow
-          id={1}
-          title="Tasty Discounts"
-          description="Everyone's been enjoying these juicy discounts!"
-          featuredCategory="featured"
-        />
-        <FeaturedRow
-          id={1}
-          title="Offers near you!"
-          description="Why not support your local restaurant tonight?"
-          featuredCategory="featured"
-        />
+
+        <View className='mb-40 mt-8'>
+          <FeaturedRow
+            title="Sponsored"
+            description="Paid placements our parteners"
+            feature="Sponsored"
+          />
+          <FeaturedRow
+            title="Tasty Discounts"
+            description="Everyone's been enjoying these juicy discounts!"
+            feature="discount"
+          />
+          <FeaturedRow
+            title="Offers near you!"
+            description="Why not support your local restaurant tonight?"
+            feature="near"
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   )
