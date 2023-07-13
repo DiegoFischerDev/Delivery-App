@@ -10,7 +10,64 @@ export const restaurantsList = [
     short_description: "A fantastic Brazilian Food Experience",
     long: 40,
     lat: 50,
-    dishes: [],
+    dishes: [
+      {
+        id: 0,
+        name: "Feijoada",
+        short_description: "Delicious pork feijoada, Brazilian style, with rice, farofa and colve. Serves 2 people.",
+        price: 45,
+        image: ""
+      },
+      {
+        id: 1,
+        name: "Picanha",
+        short_description: "Grilled picanha steak served with chimichurri sauce, fries, and salad.",
+        price: 55,
+        image: ""
+      },
+      {
+        id: 2,
+        name: "Coxinha",
+        short_description: "Deep-fried chicken croquettes filled with seasoned shredded chicken.",
+        price: 12,
+        image: ""
+      },
+      {
+        id: 3,
+        name: "Moqueca",
+        short_description: "Traditional Brazilian seafood stew with coconut milk, tomatoes, and peppers.",
+        price: 35,
+        image: ""
+      },
+      {
+        id: 4,
+        name: "Pastel",
+        short_description: "Crispy fried pastry filled with various savory fillings like cheese, meat, or shrimp.",
+        price: 8,
+        image: ""
+      },
+      {
+        id: 5,
+        name: "Açaí Bowl",
+        short_description: "Refreshing açaí berry smoothie bowl topped with granola, fruits, and honey.",
+        price: 15,
+        image: ""
+      },
+      {
+        id: 6,
+        name: "Cachaça Cocktail",
+        short_description: "Classic Brazilian cocktail made with cachaça, lime, and sugar.",
+        price: 10,
+        image: ""
+      },
+      {
+        id: 7,
+        name: "Brigadeiro",
+        short_description: "Traditional Brazilian chocolate truffles made with condensed milk and cocoa powder.",
+        price: 6,
+        image: ""
+      },
+    ],
   },
   {
     id: 1,

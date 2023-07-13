@@ -14,7 +14,13 @@ type StackNavigation = {
     genre: string
     address: string
     short_description: string
-    dishes: object
+    dishes: Array<{
+      id: number;
+      name: string;
+      short_description: string;
+      price: number;
+      image: string;
+    }>
     long: number
     lat: number
   }
