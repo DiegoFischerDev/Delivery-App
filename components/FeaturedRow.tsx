@@ -15,7 +15,7 @@ export default function FeaturedRow(props: Props) {
     <View>
       <View className="mt-4 flex-row items-center justify-between px-4">
         <Text className="font-bold text-lg">{props.title}</Text>
-        <ArrowRightIcon color="#00CCBB" />
+        <ArrowRightIcon color="gray" />
       </View>
       <Text className="text_xs text-gray-500 px-4">{props.description}</Text>
       <ScrollView
