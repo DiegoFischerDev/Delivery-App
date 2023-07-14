@@ -3,8 +3,8 @@ import React, {useState} from 'react'
 import { Image } from 'react-native'
 import { MinusCircleIcon, PlusCircleIcon } from 'react-native-heroicons/solid'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToBasket, removeFromBasket, selectBasketItemsWithId } from '../features/basketSlice'
-import { createSelector } from '@reduxjs/toolkit'
+import { addToBasket, removeFromBasket } from '../features/basketSlice'
+import { RootState } from '../store'
 
 type Props = {
   id: number
@@ -14,15 +14,14 @@ type Props = {
   image: string
 }
 
-
 export default function DishRow(props: Props) {
 
-// Selector to retrieve specific item from the basket
-const selectSpecificItem: any = createSelector<any, any>((state: any) => state, (_:any, id:any) => id, selectBasketItemsWithId);
+  const [isPressed, setIsPressed] = useState(false)
 
-  const [isPressed, setIsPressed] = useState(false);
-  const specificItem = useSelector((state) => selectSpecificItem(state, props.id))
-  const dispatch = useDispatch();
+  const items = useSelector((state: RootState) => state.basket.items)
+  const specificItem = items.filter((item) => item.id === props.id)
+
+  const dispatch = useDispatch()
 
   function AddItemToBasket(){
     dispatch(addToBasket(props))

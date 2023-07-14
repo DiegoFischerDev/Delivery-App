@@ -43,10 +43,4 @@ export const basketSlice = createSlice({
 
 export const { addToBasket, removeFromBasket } = basketSlice.actions
 
-// export const selectBasketItems = (state: { basket: BasketType }) =>
-//   state.basket.items
-
-export const selectBasketItemsWithId = (state: { basket: BasketType }, id: number) =>
-  state.basket.items.filter((item) => item.id === id)
-
 export default basketSlice.reducer
