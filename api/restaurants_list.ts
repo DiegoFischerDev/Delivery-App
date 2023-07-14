@@ -667,7 +667,7 @@ export const restaurantsList = [
   {
     id: 8,
     feature: "near",
-    imgUrl: "https://res.cloudinary.com/di9oiqvom/image/upload/v1689180710/DeliveryApp/Restaurants/We-Love-Burgers_frttgd.jpg",
+    imgUrl: "https://res.cloudinary.com/di9oiqvom/image/upload/v1689180710/DeliveryApp/Restaurants/We-Love-Burguers_frttgd.jpg",
     title: "We-Love-Burgers",
     rating: 4.9,
     genre: "Burgers",
