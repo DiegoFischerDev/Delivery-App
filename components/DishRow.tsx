@@ -45,7 +45,7 @@ export default function DishRow(props: Props) {
       <View>
         <Image
         source={{uri: props.image}}
-        className='h-20 w-20 rounded border border-gray-500'
+        className='h-20 w-20 rounded border'
         />
       </View>
     </TouchableOpacity>

@@ -22,6 +22,7 @@ import {
   StarIcon
 } from 'react-native-heroicons/solid'
 import DishRow from '../components/DishRow'
+import BasketIcon from '../components/BasketIcon'
 
 export default function RestaurantScreen() {
   const navigation = useNavigation()
@@ -63,6 +64,9 @@ export default function RestaurantScreen() {
   } = route.params as RouteParams
 
   return (
+    <>
+      <BasketIcon />
+
       <ScrollView className="relative">
         <Image
           source={{
@@ -75,8 +79,8 @@ export default function RestaurantScreen() {
           className="absolute top-14 left-3 z-10"
           onPress={navigation.goBack}
         >
-          <View className="w-10 h-10 bg-white items-center justify-center rounded-3xl border border-[#00CCBB]">
-            <ArrowLeftIcon color="#00CCBB" size={20} />
+          <View className="w-10 h-10 bg-[#00CCBB] items-center justify-center rounded-3xl border border-[#00CCBB]">
+            <ArrowLeftIcon color="white" size={20} />
           </View>
         </TouchableOpacity>
 
@@ -110,7 +114,7 @@ export default function RestaurantScreen() {
           </TouchableOpacity>
         </View>
 
-        <View className="pb-10">
+        <View className="pb-36">
           <Text className="pt-6 mb-3 font-bold px-4 text-xl">Menu</Text>
 
           {dishes.map(dish => {
@@ -127,5 +131,6 @@ export default function RestaurantScreen() {
           })}
         </View>
       </ScrollView>
+    </>
   )
 }
