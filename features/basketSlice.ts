@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
 
 type ItemType = {
   id: number
@@ -9,7 +8,7 @@ type ItemType = {
   image: string
 }
 
-export interface BasketType {
+type BasketType = {
   items: Array<ItemType>
 }
 
@@ -22,12 +21,12 @@ export const basketSlice = createSlice({
   initialState,
   reducers: {
 
-    addToBasket: (state, action: PayloadAction<ItemType>) => {
+    addToBasket: (state, action) => {
       state.items = [...state.items, action.payload]
     },
 
-    removeFromBasket: (state, action: PayloadAction<ItemType>) => {
-      const index = state.items.findIndex((item: any) => item.id === action.payload.id)
+    removeFromBasket: (state, action) => {
+      const index = state.items.findIndex((item: ItemType) => item.id === action.payload.id)
 
       if (index >= 0) {
         let newBasket = [...state.items]
