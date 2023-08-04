@@ -98,10 +98,10 @@ export default function BasketScreen() {
 
           <View className='flex-row justify-between'>
             <Text className=''>Order Total</Text>
-            <Text className='font-extrabold'>€ {subTotal + 2.99}</Text>
+            <Text className='font-extrabold'>€ {(subTotal + 2.99).toFixed(2)}</Text>
           </View>
 
-          <TouchableOpacity className='rounded-lg bg-[#00CCBB] p-4'>
+          <TouchableOpacity onPress={()=>{navigation.navigate("PreparingOrder")}} className='rounded-lg bg-[#00CCBB] p-4'>
             <Text className='text-center text-white text-lg font-bold'>Place Order</Text>
           </TouchableOpacity>
         </View>
