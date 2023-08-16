@@ -8,8 +8,8 @@ export const restaurantsList = [
     genre: "Brazilian",
     address: "456 Elm St",
     short_description: "A fantastic Brazilian Food Experience",
-    long: 40,
-    lat: 50,
+    long: -7.908731,
+    lat: 38.570707,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -85,8 +85,8 @@ export const restaurantsList = [
     genre: "Italian",
     address: "789 Oak St",
     short_description: "Delicious pizzas made with love",
-    long: 60,
-    lat: 70,
+    long: -7.908731,
+    lat: 38.570707,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -169,8 +169,8 @@ export const restaurantsList = [
     genre: "Healthy",
     address: "321 Pine St",
     short_description: "Fresh and nutritious bowls and smoothies",
-    long: 80,
-    lat: 90,
+    long: -7.908731,
+    lat: 38.570707,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -253,8 +253,8 @@ export const restaurantsList = [
     genre: "Fast-Food",
     address: "987 Maple St",
     short_description: "The iconic fast-food chain serving up delicious burgers, fries, and smiles",
-    long: 100,
-    lat: 110,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -337,8 +337,8 @@ export const restaurantsList = [
     genre: "Fast-Food",
     address: "654 Birch St",
     short_description: "The iconic fast-food chain serving up delicious burgers, fries, and smiles",
-    long: 120,
-    lat: 130,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -421,8 +421,8 @@ export const restaurantsList = [
     genre: "Burgers",
     address: "321 Oak St",
     short_description: "Juicy and flavorful burgers for everyone",
-    long: 140,
-    lat: 150,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -505,8 +505,8 @@ export const restaurantsList = [
     genre: "Indian",
     address: "987 Pine St",
     short_description: "Spicy and aromatic Indian dishes",
-    long: 160,
-    lat: 170,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -589,8 +589,8 @@ export const restaurantsList = [
     genre: "Brazilian",
     address: "654 Elm St",
     short_description: "Delightful Brazilian street food",
-    long: 180,
-    lat: 190,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -673,8 +673,8 @@ export const restaurantsList = [
     genre: "Burgers",
     address: "321 Pine St",
     short_description: "Gourmet burgers made with passion",
-    long: 200,
-    lat: 210,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -757,8 +757,8 @@ export const restaurantsList = [
     genre: "Japanese",
     address: "987 Maple St",
     short_description: "Authentic sushi made with the finest ingredients",
-    long: 100,
-    lat: 110,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -841,8 +841,8 @@ export const restaurantsList = [
     genre: "Italian",
     address: "654 Birch St",
     short_description: "Delicious and fluffy pizza crusts",
-    long: 120,
-    lat: 130,
+    long: -7.908731,
+    lat: 38.5707070,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
@@ -925,8 +925,8 @@ export const restaurantsList = [
     genre: "Japanese",
     address: "456 Elm St",
     short_description: "A fantastic sushi experience",
-    long: 40,
-    lat: 50,
+    long: -7.908731,
+    lat: 38.570707,
     dishes: [
       {
         id: Math.floor(10000 + Math.random() * 90000),
