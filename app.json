@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "Delivery-App",
-    "slug": "Delivery-App",
+    "slug": "delivery-app",
+    "description": "Delivery app created with React Native, Typescript and Tailwind by DiegoFischer.dev",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +22,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.diegofischer.deliveryapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9ae15ed7-808c-482b-a9d3-06419b600663"
+      }
+    },
+    "owner": "diegofischer"
   }
 }
